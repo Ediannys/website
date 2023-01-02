@@ -1,0 +1,21 @@
+<div>
+	<section class="product-block">
+		<p class="title-product-block">COMPLETA TU LOOK</p>
+		<div>
+			<ul class="feed-carousel-product">
+				<li *ngFor="let item of productList " class="carousel">
+					<div class="product-tile-carousel-item">
+						<img src="assets/img/{{item.picture}}" alt="" />
+					</div>
+					<div class="produc-swatch">
+						<img src="assets/img/{{item.picture}}" alt="" />
+						<img src="assets/img/{{item.picture}}" alt="" />
+					</div>
+					<p class="product-name">{{item.name}}</p>
+					<p class="product-price">{{item.price}}</p>
+					<p><button>AGREGAR AL CARRITO</button></p>
+				</li>
+			</ul>
+		</div>
+	</section>
+</div>

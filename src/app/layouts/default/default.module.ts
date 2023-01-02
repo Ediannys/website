@@ -4,6 +4,7 @@ import { DefaultComponent } from './default.component';
 import { ProductsComponent } from 'src/app/modules/products/products.component';
 import { Routes, RouterModule } from '@angular/router';
 import { SharedModule } from 'src/app/shared/shared.module';
+import { ProductListComponent } from 'src/app/modules/products/product-list/product-list.component';
 
 const routes: Routes = [
   {
@@ -23,6 +24,7 @@ const routes: Routes = [
   declarations: [
     DefaultComponent,
     ProductsComponent,
+    ProductListComponent
   ],
   imports: [
     CommonModule,

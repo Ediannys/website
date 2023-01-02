@@ -6,6 +6,7 @@ import { DefaultModule } from './layouts/default/default.module';
 
 import { Routes, RouterModule } from '@angular/router';
 
+
 const routes: Routes = [
   {
     path: '',
