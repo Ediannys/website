@@ -1,10 +1,107 @@
-
-
-
-
-
-
-
-
-
-
+:host(app-header) {
+    $primary: #666666;
+    $secundary: #7a4a58;
+  
+    a {
+      outline: none;
+      text-decoration: none;
+    }
+    a:visited {
+      color: none;
+    }
+    .color-secundary {
+      color: $secundary;
+    }
+    .background-secundary {
+      background-color: $secundary;
+    }
+    .banner {
+      background-color: $secundary;
+      font-family: "Monserrat-Bold";
+      text-align: center;
+      color: white;
+      padding: 15px;
+    }
+    .directory {
+      background-color: #c8c6cb;
+      text-align: right;
+      a {
+        color: $primary;
+        font-size: x-small;
+        font-weight: bold;
+        margin-right: 10px;
+        font-family: "Monserrat-Regular";
+      }
+    }
+    .left-items {
+      flex: 0 1 50%;
+    }
+    .nav-shop {
+      display: flex;
+      border-bottom: 1px solid gray;
+      .nav-left {
+        display: flex;
+        flex-direction: column;
+        margin-top: 12px;
+        .title {
+          position: relative;
+          a {
+            color: #5b5b5f;
+            font-family: "Monserrat-Bold";
+            font-size: 1.5em;
+            position: relative;
+            bottom: 25px;
+          }
+          img {
+            width: 5em;
+            padding-left: 16px;
+          }
+        }
+        .categories {
+          text-align: left;
+          ul {
+            display: flex;
+            list-style-type: none;
+            li {
+              color: $primary;
+              font-size: 0.95em;
+              margin-right: 1.5em;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+      .nav-right {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        margin-top: 1em;
+        padding-right: 2em;
+        div {
+          width: 100%;
+          text-align: right;
+        }
+        form {
+          position: relative;
+          display: initial;
+          input {
+            width: 15em;
+            padding: 8px 28px 7px 8px;
+          }
+          i {
+            position: absolute;
+            top: 0px;
+            right: 7px;
+            cursor: pointer;
+          }
+        }
+        .cart {
+          cursor: pointer;
+          i {
+            margin-right: 3.8%;
+          }
+        }
+      }
+    }
+  }
+  
