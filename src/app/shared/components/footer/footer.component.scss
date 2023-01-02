@@ -1,0 +1,68 @@
+:host(app-footer) {
+    $light: #e7e6e2;
+    $primary: #666666;
+  
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+  
+    .nav-footer-top {
+      background-color: $light;
+      text-align: center;
+      .top-title {
+        padding-top: 1em;
+        font-size: xx-large;
+        color: $primary;
+      }
+      .icons {
+        width: 5em;
+        border-top: 3px solid $primary;
+        margin: 0px auto;
+        padding: 1em;
+        font-size: x-large;
+  
+        i {
+          margin-right: 15px;
+          color: $primary;
+        }
+      }
+    }
+  
+    .nav-footer-bottom {
+      display: flex;
+      justify-content: space-around;
+      padding: 0px 2em;
+  
+      ul {
+        padding: 0px;
+        font-size: smaller;
+  
+        li {
+          margin-top: 7px;
+        }
+      }
+  
+      .link-col {
+        flex: 0 1 50%;
+        p {
+          font-weight: bold;
+        }
+      }
+  
+      form {
+        position: relative;
+        display: initial;
+        input {
+          width: 15em;
+          padding: 8px 28px 7px 8px;
+        }
+        i {
+          position: absolute;
+          top: 0px;
+          right: 7px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  

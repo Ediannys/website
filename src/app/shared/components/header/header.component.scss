@@ -2,13 +2,7 @@
     $primary: #666666;
     $secundary: #7a4a58;
   
-    a {
-      outline: none;
-      text-decoration: none;
-    }
-    a:visited {
-      color: none;
-    }
+    
     .color-secundary {
       color: $secundary;
     }
@@ -36,7 +30,7 @@
     .left-items {
       flex: 0 1 50%;
     }
-    .nav-shop {
+    .nav-header-shop {
       display: flex;
       border-bottom: 1px solid gray;
       .nav-left {
@@ -61,7 +55,6 @@
           text-align: left;
           ul {
             display: flex;
-            list-style-type: none;
             li {
               color: $primary;
               font-size: 0.95em;
