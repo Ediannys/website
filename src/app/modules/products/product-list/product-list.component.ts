@@ -7,17 +7,19 @@ import { ProductModel } from 'src/app/models/product.model';
   templateUrl: './product-list.component.html',
   styleUrls: ['./product-list.component.scss']
 })
-export class ProductListComponent implements OnInit{
+export class ProductListComponent implements OnInit {
 
-  productList?: ProductModel[]; 
-  constructor(private productListService: ProductListService){}
+  productList?: ProductModel[];
+  constructor(private productListService: ProductListService) { }
 
   ngOnInit(): void {
-    this.getNewPorducts()
+    this.getAllProducts()
   }
 
-  public getNewPorducts(): void{
-    this.productList = this.productListService.getNewProducts()
-    console.log(this.productList)
+  public getAllProducts(): void {
+    this.productListService.getAllProducts().subscribe(data => {
+      this.productList = data;
+    }, error => { console.log(error) })
+
   }
 }

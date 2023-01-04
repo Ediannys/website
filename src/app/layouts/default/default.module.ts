@@ -5,6 +5,10 @@ import { ProductsComponent } from 'src/app/modules/products/products.component';
 import { Routes, RouterModule } from '@angular/router';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { ProductListComponent } from 'src/app/modules/products/product-list/product-list.component';
+import { ShowProductComponent } from 'src/app/modules/products/show-product/show-product.component';
+
+import { NgxImageZoomModule } from 'ngx-image-zoom';
+
 
 const routes: Routes = [
   {
@@ -14,7 +18,7 @@ const routes: Routes = [
       {
         path: '',
         component: ProductsComponent
-      }
+      },
     ]
   }]
 
@@ -24,12 +28,15 @@ const routes: Routes = [
   declarations: [
     DefaultComponent,
     ProductsComponent,
-    ProductListComponent
+    ProductListComponent,
+    ShowProductComponent
   ],
   imports: [
     CommonModule,
     RouterModule.forChild(routes),
-    SharedModule
+    SharedModule,
+    NgxImageZoomModule
+   
   ],
   exports:[RouterModule]
 })

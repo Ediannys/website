@@ -1,0 +1,18 @@
+:host(app-show-product) {
+    .shoe-box {
+        display: flex;
+    }
+    .left-items {
+        flex: 0 1 50%;
+    }
+    .product-swatch {
+        display: flex;
+        justify-content: initial;
+        padding: 10px 27px;
+
+        img{
+        width: 70px;
+        margin-right: 23px;
+    }
+}
+}
