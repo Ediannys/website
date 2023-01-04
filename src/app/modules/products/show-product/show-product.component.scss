@@ -23,8 +23,15 @@
 			margin-right: 23px;
 		}
 	}
+
+	.right-box{
+		max-width: 429px;
+		margin: 0px auto;
+		padding-top: 34px;
+
+	}
 	.div-right {
-		padding: 2em 10em;
+
 		.shoe-title,
 		.shoe-price,
 		.shoe-description {
@@ -80,11 +87,24 @@
 			.shoe-guide {
 				border-bottom: 2px solid $dark;
 			}
-            .shoe-heart{
-                font-size: 2em;
-                margin: 1em 2em;
-                color: $dark;
-            }
+			.shoe-heart {
+				font-size: 2em;
+				margin: 1em 2em;
+				color: $dark;
+			}
+		}
+	}
+	.product-detail,
+	.technology {
+		padding: 0.5em 1.7em;
+		.title {
+			color: $dark;
+			font-weight: 700;
+		}
+		.text {
+			text-align: justify;
+			line-height: 30px;
+			font-size: 1.2em;
 		}
 	}
 }

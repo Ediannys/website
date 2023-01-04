@@ -17,6 +17,8 @@ export class ShowProductComponent implements OnInit {
   public name = "";
   public price = "";
   public description = "";
+  public productDetail ="";
+  public technology = "";
 
 
   constructor(private productListService: ProductListService) { }
@@ -34,6 +36,8 @@ export class ShowProductComponent implements OnInit {
       this.name = data.name;
       this.price = data.price;
       this.description = data.description;
+      this.productDetail = data.productDetail;
+      this.technology = data.technology
       
     }, error => { console.log(error) })
   }

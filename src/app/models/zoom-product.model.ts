@@ -7,6 +7,8 @@ export interface ZoomProductModel {
     colors: string[],
     name: string,
     price: string,
-    description: string
+    description: string,
+    productDetail: string,
+    technology: string
 }
 

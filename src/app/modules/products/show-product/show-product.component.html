@@ -15,7 +15,7 @@
             </div>
         </div>
         <div class="div-right left-items">
-            <div>
+            <div class="right-box">
                 <h2 class="shoe-title">{{name | uppercase}}</h2>
                 <h2 class="shoe-price">{{price | uppercase}}</h2>
                 <p class="shoe-description text-family">{{description | titlecase}}</p>
@@ -43,4 +43,18 @@
             </div>
         </div>
     </div>
+    <section class="product-detail">
+        <p class="title">DETALLES DE PRODUCTO</p>
+        <hr />
+        <p class="text text-family">
+            {{productDetail}}
+        </p>
+    </section>
+    <section class="technology">
+        <p class="title">TECNOLOGÍAS</p>
+        <hr />
+        <p class="text text-family">
+            {{technology}}
+        </p>
+    </section>
 </div>
