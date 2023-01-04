@@ -4,7 +4,7 @@ Ediannys Gonzalez
 
 <p align="center">
   <kbd>
-<img src="src/assets/picture.png"></img>
+<img src="src/assets/picture.gif"></img>
   </kbd>
 </p>
 
