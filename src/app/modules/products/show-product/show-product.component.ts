@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductListService } from 'src/app/services/product-list.service';
-
+import { SizeModel } from 'src/app/models/size.model';
 
 @Component({
   selector: 'app-show-product',
@@ -12,6 +12,12 @@ export class ShowProductComponent implements OnInit {
   public title = "";
   public myThumbnail = "";
   public myFullresImage = "";
+  public colors = [""];
+  public sizes?: SizeModel[];
+  public name = "";
+  public price = "";
+  public description = "";
+
 
   constructor(private productListService: ProductListService) { }
 
@@ -23,6 +29,12 @@ export class ShowProductComponent implements OnInit {
     this.productListService.getZoomProduct().subscribe(data => {
       this.myThumbnail = data.thumbImage;
       this.myFullresImage = data.fullImage
+      this.colors = data.colors;
+      this.sizes = data.sizes;
+      this.name = data.name;
+      this.price = data.price;
+      this.description = data.description;
+      
     }, error => { console.log(error) })
   }
 

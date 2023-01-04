@@ -109,7 +109,45 @@ const PRODUCT_DATA: ProductModel[] = [
 
 const ZOOM_PRODUCT: ZoomProductModel = {
   thumbImage: "https://pixabay.com/get/g28efdd29cf24a9bc6f73799d8b831674522a2d8323ff38895ad5edf1262cc504402b75891f895598e3dc114719c7229b5f22b4376a6a0bbec8e1bc8ddf9b8333418e6462c2278d0a090a55eccd06692d_640.jpg",
-  fullImage: "https://pixabay.com/get/g3f1930784f77e0623ffdd40c919d842cb1c69cc7c83c43cc97a32f1e4cd0e7a75ff79f7e163e4c8d393432609abac2e25eedb36355525fa333ecc55a858e41c07c73c4299909a71a9d62c2d9339907e6_1920.jpg"
+  fullImage: "https://pixabay.com/get/g3f1930784f77e0623ffdd40c919d842cb1c69cc7c83c43cc97a32f1e4cd0e7a75ff79f7e163e4c8d393432609abac2e25eedb36355525fa333ecc55a858e41c07c73c4299909a71a9d62c2d9339907e6_1920.jpg",
+  sizes: [
+    {
+      number: "5",
+      color: "#C8C6CA"
+    },
+    {
+      number: "5.5",
+      color: "#C8C6CA"
+    },
+    {
+      number: "6",
+      color: "#E8E8E9"
+    }, {
+      number: "6.5",
+      color: "#C8C6CA"
+    }, {
+      number: "7",
+      color: "#C8C6CA"
+    }, {
+      number: "7.5",
+      color: "#C8C6CA"
+    }, {
+      number: "8",
+      color: "#C8C6CA"
+    }, {
+      number: "8.5",
+      color: "#C8C6CA"
+    }, {
+      number: "9",
+      color: "#C8C6CA"
+    }, {
+      number: "9.5",
+      color: "#C8C6CA"
+    }],
+  colors: ["https://pixabay.com/get/g28efdd29cf24a9bc6f73799d8b831674522a2d8323ff38895ad5edf1262cc504402b75891f895598e3dc114719c7229b5f22b4376a6a0bbec8e1bc8ddf9b8333418e6462c2278d0a090a55eccd06692d_640.jpg"],
+  name: "zapatilla hombre pelikan",
+  price: "$00.000",
+  description: "Cod. de producto zap 005"
 }
 
 @Injectable({

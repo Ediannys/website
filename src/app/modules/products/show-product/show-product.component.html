@@ -1,19 +1,46 @@
 <div>
     <div class="shoe-box">
-        <div class="div-left">
+        <div class="div-left left-items">
             <div class="div-left left-items">
-                <lib-ngx-image-zoom [thumbImage]=myThumbnail [fullImage]=myFullresImage></lib-ngx-image-zoom>
-                <hr>
+                <p class="shoe-category">HUSHPUPPIESCO/ CALZADO/ ZAPATILLA HOMBRE PELIKAN</p>
+                <lib-ngx-image-zoom [thumbImage]="myThumbnail" [fullImage]="myFullresImage"></lib-ngx-image-zoom>
+                <hr />
                 <div class="product-swatch">
-                    <img class="" src="{{myThumbnail}}" alt="">
-                    <img src="{{myThumbnail}}" alt="">
-                    <img src="{{myThumbnail}}" alt="">
-                    <img src="{{myThumbnail}}" alt="">
-                    <img src="{{myThumbnail}}" alt="">
+                    <img class="" src="{{myThumbnail}}" alt="" />
+                    <img src="{{myThumbnail}}" alt="" />
+                    <img src="{{myThumbnail}}" alt="" />
+                    <img src="{{myThumbnail}}" alt="" />
+                    <img src="{{myThumbnail}}" alt="" />
                 </div>
             </div>
         </div>
         <div class="div-right left-items">
+            <div>
+                <h2 class="shoe-title">{{name | uppercase}}</h2>
+                <h2 class="shoe-price">{{price | uppercase}}</h2>
+                <p class="shoe-description text-family">{{description | titlecase}}</p>
+                <div class="shoe-colors">
+                    <p class="text-family">COLOR</p>
+                    <div class="color-grid">
+                        <div class="color-items" *ngFor="let item of colors">
+                            <img src="{{item}}" alt="" />
+                        </div>
+                    </div>
+                </div>
+                <div class="shoe-size">
+                    <p class="text-family">TALLA</p>
+                    <ul class="size-grid">
+                        <li class="size-items" [ngStyle]="{'background-color':item.color }" *ngFor="let item of sizes">
+                            {{item.number}}
+                        </li>
+                    </ul>
+                </div>
+                <div class="shoe-car">
+                    <p><span class="shoe-guide text-family"> GUIA DE TALLAS</span></p>
+                    <button>AGREGAR AL CARRITO</button>
+                    <span><i class="shoe-heart bi bi-suit-heart-fill"></i></span>
+                </div>
+            </div>
         </div>
     </div>
 </div>
