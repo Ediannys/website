@@ -1,11 +1,9 @@
 :host(app-footer) {
     $light: #e7e6e2;
     $primary: #666666;
-  
     display: flex;
     flex-direction: column;
     align-self: flex-end;
-  
     .nav-footer-top {
       background-color: $light;
       text-align: center;
@@ -27,28 +25,23 @@
         }
       }
     }
-  
     .nav-footer-bottom {
       display: flex;
       justify-content: space-around;
       padding: 0px 2em;
-  
       ul {
         padding: 0px;
         font-size: smaller;
-  
         li {
           margin-top: 7px;
         }
       }
-  
       .link-col {
         flex: 0 1 50%;
         p {
           font-weight: bold;
         }
       }
-  
       form {
         position: relative;
         display: initial;

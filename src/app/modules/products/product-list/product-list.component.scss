@@ -1,34 +1,25 @@
 :host(app-product-list) {
 	$light: #e7e6e2;
 	$secundary: #7a4a58;
-
 	.color-secundary {
 		color: $secundary;
 	}
-	.feed-carousel-product {
-		display: flex;
-		flex-wrap: wrap;
-	}
-
 	.title-product-block {
 		background-color: $light;
 		padding: 3px;
 		font-weight: bold;
 	}
-
 	.feed-carousel-product {
 		padding: 3em 1em;
-		display: flex;
-		justify-content: space-around;
+		display: grid;
+		grid-template: 1fr 1fr 1fr 1fr/ 1fr 1fr 1fr 1fr;
 
 		.product-tile-carousel-item img {
 			width: 150px;
 		}
-
 		.produc-swatch img {
 			width: 40px;
 		}
-
 		.carousel {
 			margin: 0.5em;
 			text-align: center;
