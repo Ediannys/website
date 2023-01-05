@@ -1,4 +1,4 @@
-:host(app-product-list) {
+:host(app-slider-product) {
 	$light: #e7e6e2;
 	$secundary: #7a4a58;
 	.color-secundary {
@@ -9,39 +9,51 @@
 		padding: 10px;
 		font-weight: bold;
 	}
-	.feed-carousel-product {
+	.feed-slider-box {
+		position: relative;
+		button {
+			position: absolute;
+			font-size: 1.7em;
+			padding: 18px 4px;
+			background: white;
+			border-radius: 23px;
+			border: 1px solid lightgray;
+			cursor: pointer;
+		}
+		.next {
+			right: 0px;
+			top: 34%;
+		}
+		.previous {
+			left: 0px;
+			top: 34%;
+		}
+	}
+	.feed-slider-product {
 		padding: 3em 1em;
-		display: grid;
-		grid-template: 1fr 1fr 1fr 1fr/ 1fr 1fr 1fr 1fr;
-
+		display: flex;
+		overflow-x: scroll;
+		justify-content: space-between;
 		.product-tile-carousel-item img {
 			width: 150px;
 		}
 		.product-swatch img {
 			width: 40px;
 		}
-		.carousel {
+		.slider {
 			margin: 0.5em;
 			text-align: center;
 			align-self: flex-end;
+			padding: 0px 6%;
 		}
 		p {
 			margin: 10px;
-		}
-		button {
-			background-color: $secundary;
-			border: 1px solid $secundary;
-			color: white;
-			padding: 12px;
-			font-weight: 700;
-			font-size: 0.7em;
 		}
 		.product-name {
 			font-weight: bold;
 			font-family: "Monserrat-Regular";
 			font-size: 0.7em;
 		}
-
 		.product-price {
 			color: $secundary;
 		}

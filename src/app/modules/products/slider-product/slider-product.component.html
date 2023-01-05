@@ -1,0 +1,22 @@
+<div>
+    <section class="product-slider-block">
+        <p class="title-product-block">PRODUCTOS RECOMENDADOS</p>
+        <div class="feed-slider-box">
+            <ul id="div-ul" #target class="feed-slider-product">
+                <li *ngFor="let item of productList  " class="slider">
+                    <div class="product-tile-carousel-item">
+                        <img src="assets/img/{{item.picture}}" alt="" />
+                    </div>
+                    <div class="product-swatch">
+                        <img src="assets/img/{{item.picture}}" alt="" />
+                        <img src="assets/img/{{item.picture}}" alt="" />
+                    </div>
+                    <p class="product-name">{{item.name}}</p>
+                    <p class="product-price">{{item.price}}</p>
+                </li>
+            </ul>
+            <button class="previous" (click)="previous('div-ul')"><</button>
+            <button class="next" (click)="next('div-ul')">></button>
+        </div>
+    </section>
+</div>

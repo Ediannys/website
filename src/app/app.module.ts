@@ -3,6 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { DefaultModule } from './layouts/default/default.module';
 import { Routes, RouterModule } from '@angular/router';
+
+
 const routes: Routes = [
   {
     path: '',
@@ -11,7 +13,7 @@ const routes: Routes = [
 ]
 @NgModule({
   declarations: [
-    AppComponent,
+    AppComponent
   ],
   imports: [
     BrowserModule,
